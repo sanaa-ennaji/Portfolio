@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>My Portfolio</title>
 </head>
 <body>
@@ -25,42 +26,43 @@
     <ul class="nav__list grid">
 
         <li class="nav__item">
-            <a href="#" class="nav__link">
-            <i class="uil uil-home"></i> home </a>
+            <a href="#" class="nav__link nav__icon"> <i class="uil uil-estate"></i> home </a>
         </li>
         <li class="nav__item">
-            <a href="#" class="nav__link"><i class="uil uil-file"></i>skills</a>
+            <a href="#" class="nav__link nav__icon"><i class="uil uil-file"></i>skills</a>
 
         </li>
 
         <li class="nav__item">
-            <a href="#" class="nav__link"> <i class="uil uil-user"></i>services</a>
+            <a href="#" class="nav__link nav__icon"> <i class="uil uil-user"></i>services</a>
                 
         </li>
 
-      
-
         <li class="nav__item">
-            <a href="#" class="nav__link"><i class="uil uil-file"></i>education</a>
+            <a href="#" class="nav__link nav__icon"><i class="uil uil-file"></i>education</a>
 
         </li>
 
         <li class="nav__item">
-            <a href="#" class="nav__link"><i class="uil uil-file"></i>projects</a>
+            <a href="#" class="nav__link nav__icon"><i class="uil uil-file"></i>projects</a>
 
         </li>
         <li class="nav__item">
-            <a href="#" class="nav__link"><i class="uil uil-file"></i>contact</a>
+            <a href="#" class="nav__link nav__icon"><i class="uil uil-file"></i>contact</a>
 
         </li>
 
     </ul>
+    <i class="uil uil-times nav__close" id="nav-close"></i>
 </div>
-<div class="nav__btns">
-    <div class="nav__toggle" id="nav-toggle"></div>
+<div class="nav__btns"  >
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-ellipsis-v"></i>
+    </div>
 </div>
 </nav>
 </header>
+
 <!-- <div class="home">
     <div class="text">
         <h1>Hi! , I'm sanaa ennaji  </h1>
@@ -78,11 +80,38 @@
   <main class="main">
 
   </main>
-
+<!-- =================== home ====================== -->
+<section class="home section" id="home">
+    <div class="home__container container grid">
+        <div class="home__content grid">
+            <div class="home__social">
+                <a href="" class="home__social-icon" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="" class="home__social-icon"  target="_blank">
+                    <i class="uil uil-dribbble"></i>
+                </a>
+                <a href="" class="home__social-icon" target="_blank">
+                    <i class="uil uil-github"></i>
+                </a>
+            </div>
+            <div class="home__img">
+                <div class="home__blob">
+                    <img  class="home__blob-img" src="imgs/2823496.jpg" alt="">
+                </div>
+            </div>
+            <div class="home__data">
+                <h1 class="home__title">Hi , I'am sanaa</h1>
+               <h3 class=" home__subtitle">FullStack developer</h3>
+                 <p class="home__description"> </p>
+            </div>
+        </div>
+    </div>
+</section>
   <!-- footer  -->
 
 
   <!-- scroll top  -->
-    <script src="portfolio.js"></script>
+   <script src="portfolio.js"></script>
 </body>
 </html>

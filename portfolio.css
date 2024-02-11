@@ -8,7 +8,7 @@
 
     /* hls color mode #6E57E0  */
 
---firs-color:hls(var(--hue-color),69%,61%);
+--first-color:hls(var(--hue-color),69%,61%);
 --first-color-second:hls(var(--hue-color),69%,61%);
 --first-color-alt :hls(var(--hue-color),57%,63%);
 --first-color-lighter:hls(var(--hue-color),92%,85%);
@@ -113,27 +113,15 @@ img{
 
 }
 
-/* header{
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(229, 209, 239);
+header{
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: var(--z-fixed);
+background-color:var(--body-color) ;
 }
 
-  
-nav{
-  margin: 0;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 40rem;
-
-  box-sizing: border-box;
-
-
- 
-} */
 /* ============= reusable css classes ================= */
 
 .section{
@@ -143,6 +131,7 @@ nav{
   font-size: var(--h1-font-size);
 
 }
+
 .section_subtitle{
   display: block;
   font-size: var(--small-font-size);
@@ -166,5 +155,81 @@ nav{
   display: grid;
   gap: 1.5rem;
 
+}
+
+nav{
+ max-width: 968px;
+ height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo , .nav__logo {
+
+color: var(--title-color);
+font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+  color: var(--firs-color);
+}
+.nav__toggle{
+ font-size: 1.1rem;
+  cursor:pointer;
+}
+.nav__toggle:hover{
+  color:var(--firs-color);
+ }
+
+@media screen and (max-width:767px) {
+   .nav__menu{
+     position: fixed;
+     bottom: -1000%;
+     left:0;
+     width: 100%;
+     background-color: var(--body-color);
+     padding:2rem 1.5rem 4rem;
+     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+     border-radius:1.5rem 1.5rem 0 0;
+    transition: .3s;
+   }
+
+}
+
+.nav__list{
+  grid-template-columns: repeat(3, 1fr);
+   gap:2rem;
+}
+.nav__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+
+}
+.nav__lik:hover{
+  color: var(--first-color);
+}
+
+.nav__icon{
+  font-size: 1.2rem;
+}
+.nav-close{
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+  color: var(--firs-color);
+}
+.nav-close:hover{
+  color: var(--first-color-alt);
+
+}
+
+/* show menu */
+.show-menu{
+  bottom: 0;
 }
 
